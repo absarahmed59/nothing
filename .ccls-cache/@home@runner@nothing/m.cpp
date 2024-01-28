@@ -1,30 +1,22 @@
 #include <iostream>
 using namespace std;
 
-class Birthday {
-private:
-  int day, month, year;
-
-public:
-  Birthday(int d, int m, int y) : day(d), month(m), year(y){};
-  void DOB() { cout << "Dob is: " << day << "/" << month << "/" << year; }
-};
-
-class Person {
-private:
-  Birthday birth;
-  string name;
-
-public:
-  Person(string n, Birthday b) : birth(b), name(n){};
-  void show_info() {
-    cout << "Name is: " << name << endl;
-    birth.DOB();
-  }
-};
+int Equation(int w, int x, int y, int z) {
+  if (w * w + x * x + y * y == z * z)
+    return 0;
+  else
+    return -1;
+}
 
 void m() {
-  Birthday b(11, 2, 2004);
-  Person p("Absar Ahmed", b);
-  p.show_info();
+  int a, b, c, d;
+  cout << "Enter value of a: ";
+  cin >> a;
+  cout << "Enter value of b: ";
+  cin >> b;
+  cout << "Enter value of c: ";
+  cin >> c;
+  cout << "Enter value of d: ";
+  cin >> d;
+  Equation(a, b, c, d);
 }
