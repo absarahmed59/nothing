@@ -13,5 +13,5 @@ void Prime() {
       cout << i << " ";
     }
   }
-  retur
+  return;
 }
