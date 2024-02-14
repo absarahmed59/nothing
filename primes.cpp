@@ -1,12 +1,12 @@
-#include <iostream>
 #include <cmath>
+#include <iostream>
 using namespace std;
 
 bool is_prime(int num) {
   if (num <= 1) {
     return false;
   }
-  for (int i=2; i <= sqrt(num); i++) {
+  for (int i = 2; i <= sqrt(num); i++) {
     if (num % i == 0) {
       return false;
     }
@@ -16,7 +16,7 @@ bool is_prime(int num) {
 
 void print_primes_from_input(int n) {
   int count = 0;
-  int num = n+1;
+  int num = n + 1;
   while (count < 10) {
     if (is_prime(num)) {
       cout << num << " ";
