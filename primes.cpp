@@ -26,7 +26,7 @@ void print_primes_from_input(int n) {
   }
 }
 
-int main() {
+int Prime() {
   int input_num;
   cout << "Enter a number: ";
   cin >> input_num;
