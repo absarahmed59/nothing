@@ -13,4 +13,3 @@ public:
 
   ~Class2() { cout << "Destructor for Class2" << endl; }
 };
-// commented
